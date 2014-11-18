@@ -2,4 +2,9 @@ language: c
 compiler:
   - gcc
   - clang
+before_script:
+  - autoconf -V
+  - uname -a
+  - lsb_release -a
+  - dpkg -l | grep auto
 script: ./autogen.sh && ./configure && make && make test
