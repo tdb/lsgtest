@@ -6,7 +6,7 @@
 #
 
 # Might work with older autoconfs... but tested on 2.57
-AC_PREREQ([2.69])
+AC_PREREQ([2.68])
 
 # Change these to change the package name and version
 AC_INIT([libstatgrab],[0.91],[https://github.com/i-scream/libstatgrab/issues],[],[http://www.i-scream.org/libstatgrab/])
