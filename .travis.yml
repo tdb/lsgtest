@@ -5,4 +5,4 @@ compiler:
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y autoconf-archive gnulib docbook2x ncurses-dev
-script: autoreconf -i -I/usr/share/gnulib/m4 && CFLAGS="-Wall -Wextra -Werror" ./configure && make
+script: autoreconf -i -I/usr/share/gnulib/m4 && ./autogen.sh && CFLAGS="-Wall -Wextra -Werror" ./configure && make
